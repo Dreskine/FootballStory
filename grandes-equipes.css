@@ -1,0 +1,380 @@
+/* Styles globaux */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(148, 27, 27);
+}
+
+/* Barre de navigation */
+.barre {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white; 
+    width: 100%;
+    padding: 15px 200px; 
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Conteneur des liens */
+.lien {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lien a {
+    font-size: 16px;
+    color: rgb(148, 27, 27);
+    transition: color 0.3s;
+}
+
+.lien a:hover {
+    color: #285dec;
+}
+
+
+
+
+
+
+.section1 {
+    background-image: url("img/messicr7ramos.png");
+    background-color: rgba(0, 0, 0, 0.7); 
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 20%;    
+    height: 100vh;
+    align-items: center; 
+    display: flex;
+    color: #ffffff; 
+}
+
+
+
+.texte-competitions {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+
+#presentation{
+    padding: 20px 50px;
+    padding-bottom: 50px;
+}
+
+
+.Intro-coupe {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #000000;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.para{
+    font-size: 1em;
+    padding: 0 200px;
+    text-align: center;
+}
+
+
+#Titre-Grandes-Nations{
+    margin: 20px;
+    background-image: url(img/drapeaux.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+#Grandes-Nations{
+    padding: 0 200px;
+    background-image: url(img/grandesN.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: darken;
+    color: #ffffff;
+}
+
+.IMAGE{
+    max-width: 40%;
+}
+
+.Agencement{
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+}
+
+.Agencement p{
+    text-align: justify;
+}
+
+.moment-item {
+    display: flex; 
+    align-items: center;
+    gap: 20px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 10px; 
+    border-radius: 8px; 
+}
+
+.drapeau {
+    height: auto; 
+    flex-shrink: 0; 
+}
+
+.texte-moment {
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+}
+
+
+/* Section "Ligne" (les 3 en bas) */
+.Ligne {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.Ligne .moment-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    gap: 10px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.Ligne img {
+    width: 100px; 
+}
+
+.Ligne h2 {
+    font-size: 16px; 
+    color: #ffffff;
+}
+
+.Ligne p {
+    font-size: 14px; 
+    color: #ffffff;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Grand club*/
+
+#Titre-Grandes-Nations2{
+    margin: 20px;
+    padding: 20px;
+    background-image: url(img/drapeaux.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+#Club{
+    padding: 0 200px;
+    background-image: url("img/messicr7ramos_bw.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.Agencement2{
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 40px; 
+}
+
+.IMAGEBARCA{
+    max-width: 30%;
+}
+
+.moment-item2{
+    display: flex; 
+    align-items: center;
+    gap: 20px; 
+    padding: 10px; 
+    border-radius: 8px; 
+}
+
+.Ligne2 .moment-item3 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    gap: 10px; 
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.Ligne2 img {
+    width: 50%; 
+}
+
+.Ligne2 h2 {
+    font-size: 19px; 
+    color: #000000;
+}
+
+.Ligne2 p {
+    font-size: 16px; 
+    color: #000000;
+    text-align: justify;
+}
+
+#Bas-page{
+    margin: 50px;
+    text-align: center;
+}
+
+/* Responsive Design for grandes-equipes.css */
+
+/* Navigation Responsiveness */
+@media screen and (max-width: 768px) {
+    .barre {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .lien {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Section and Text Responsiveness */
+@media screen and (max-width: 1024px) {
+    .section1 {
+        background-position: center center;
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .texte-competitions, .Intro-coupe {
+        padding: 20px;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .para {
+        padding: 0 20px;
+    }
+}
+
+/* Grandes Nations Section Responsiveness */
+@media screen and (max-width: 768px) {
+    #Grandes-Nations .Agencement,
+    #Club .Agencement2 {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .moment-item, .moment-item2 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .IMAGE, .IMAGEBARCA {
+        max-width: 70%;
+        margin-bottom: 15px;
+    }
+
+    .Ligne, .Ligne2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Ligne .moment-item,
+    .Ligne2 .moment-item3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Typography Adjustments */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .Intro-coupe {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .Ligne h2, .Ligne2 h2 {
+        font-size: 1rem;
+    }
+
+    .Ligne p, .Ligne2 p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Padding and Margin Adjustments */
+@media screen and (max-width: 768px) {
+    #Grandes-Nations, #Club {
+        padding: 0 20px;
+    }
+}

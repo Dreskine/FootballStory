@@ -1,0 +1,250 @@
+/* Styles globaux */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(148, 27, 27);
+}
+
+/* Barre de navigation */
+.barre {
+    display: flex;
+    justify-content: space-between; /* Sépare le contenu */
+    align-items: center; /* Centre verticalement */
+    background-color: white; /* Couleur de fond */
+    width: 100%;
+    padding: 15px 200px; /* Espacement autour des éléments */
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Conteneur des liens */
+.lien {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /
+}
+
+
+.lien a {
+    font-size: 16px;
+    color: rgb(148, 27, 27);
+    transition: color 0.3s; 
+}
+
+.lien a:hover {
+    color: #285dec; 
+}
+
+/*Intre  --------------------------------------------------------------------------------*/
+
+.section1 {
+    background-image: url("img/meilleursJoueurs.jpg");
+    background-color: rgba(0, 0, 0, 0.7); /* Noir à 50% de transparence */
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 25%;    
+    height: 100vh; /* La section occupe toute la hauteur de l'écran */
+    align-items: center; 
+    display: flex;
+    color: #ffffff; 
+}
+
+
+.texte-competitions {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.texte-competitions {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+
+#presentation{
+    padding: 20px 50px;
+    padding-bottom: 50px;
+}
+
+
+.Intro-coupe {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #000000;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.para{
+    font-size: 1em;
+    padding: 0 200px;
+    text-align: center;
+}
+
+
+/*Granbds jioueurs*/
+
+
+#JOUEURS{
+    background-image: url(img/messicr7ramos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.conteneur{
+    padding: 200px;
+}
+
+.col{
+    display: inline-flex;
+    gap: 20px;
+}
+
+.col .img2{
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.col .img1 {
+    max-width: 50%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.texte {
+    padding: 10px;
+}
+
+ h2{
+    text-align: center;
+}
+
+#JOUEURS  h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+#Bas-page{
+    margin: 50px;
+    text-align: center;
+}
+
+
+
+/* Responsive Design for grands-joueurs.css */
+
+/* Adjust navigation bar for smaller screens */
+@media screen and (max-width: 768px) {
+    .barre {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .lien {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Responsive adjustments for sections */
+@media screen and (max-width: 1024px) {
+    .section1 {
+        background-position: center center;
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .texte-competitions, .Intro-coupe {
+        padding: 20px;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .para {
+        padding: 0 20px;
+    }
+}
+
+/* Responsive design for player sections */
+@media screen and (max-width: 768px) {
+    #JOUEURS .conteneur {
+        padding: 20px;
+    }
+
+    .col {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .col > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .col .img1, .col .img2 {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texte {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive typography */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .texte-competitions, .Intro-coupe {
+        font-size: 1.5rem;
+    }
+
+    .para {
+        font-size: 0.9em;
+    }
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}

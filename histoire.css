@@ -1,0 +1,361 @@
+/* Styles globaux */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(148, 27, 27);
+}
+
+/* Barre de navigation */
+.barre {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white;
+    width: 100%;
+    padding: 15px 200px; 
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1000;
+}
+
+.lien {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lien a {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(148, 27, 27);
+    transition: color 0.3s;
+}
+
+.lien a:hover {
+    color: #285dec;    
+}
+
+.section1 {
+    background-image: url("img/image_2024-10-22_145031615.png");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+    padding: 50px 20px;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.texte-histoire {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #fdedb9;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.conteneur {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.conteneur::after {
+    content: "";
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px; 
+    height: 20px; 
+    background-color: #fdedb9; 
+    border-radius: 50%; 
+    z-index: 1; 
+}
+
+.conteneur.gauche {
+    text-align: left;
+}
+
+.conteneur.gauche div {
+    background-color: #285dec;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    margin-right: 60%;
+    border: 2px solid #285dec;
+}
+
+.conteneur.gauche div::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+}
+
+.conteneur.droite {
+    text-align: left;
+}
+
+.conteneur.droite div {
+    background-color: #285dec;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    margin-left: 60%;
+    border: 2px solid #285dec;
+}
+
+.conteneur.droite div::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #fdedb9;
+}
+
+.section2 {
+    padding: 50px 100px; 
+    background-image: url("img/image_2024-10-22_145031615.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    margin-top: 0; 
+}
+
+.Conteneur-Histoire {
+    padding: 30px;
+    display: inline-flex;
+    color: #ffffff;
+    flex-wrap: wrap; 
+}
+
+.Conteneur-Histoire div {
+    flex-basis: 50%;
+}
+
+.Conteneur-Histoire img {
+    width: 80%; 
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px; 
+}
+
+.histoire-col1, .histoire-col2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.histoire-col1 {
+    text-align: justify;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.Conteneur-Histoire p {
+    font-size: 16px; 
+    line-height: 1.8;
+    width: 90%; 
+}
+
+.section3 {
+    background-color: rgb(92, 90, 88);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.histoire-fr2 p {
+    font-size: 16px; 
+    line-height: 1.8;
+    width: 90%; 
+}
+
+#Bas-page {
+    margin: 50px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .barre {
+        padding: 15px 100px;
+    }
+
+    .timeline {
+        max-width: 90%;
+    }
+
+    .Conteneur-Histoire {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Conteneur-Histoire div {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .Conteneur-Histoire img {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .barre {
+        padding: 15px 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lien {
+        margin-top: 10px;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .conteneur::after {
+        left: 30px;
+    }
+
+    .conteneur.gauche div, 
+    .conteneur.droite div {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+        margin-right: 0;
+    }
+
+    .Conteneur-Histoire p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .barre {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lien {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .texte-histoire {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+
+    .section1, .section2, .section3 {
+        padding: 20px;
+    }
+
+    .timeline {
+        margin: 20px auto;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .conteneur::after {
+        left: 20px;
+    }
+
+    .conteneur.gauche div, 
+    .conteneur.droite div {
+        width: calc(100% - 40px);
+        margin-left: 40px;
+        padding: 10px;
+    }
+
+    .histoire-col1, .histoire-col2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Conteneur-Histoire img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .barre {
+        padding: 5px 10px;
+    }
+
+    .lien a {
+        font-size: 14px;
+    }
+
+    .texte-histoire {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .timeline {
+        margin: 10px auto;
+    }
+
+    .conteneur.gauche div, 
+    .conteneur.droite div {
+        margin-left: 30px;
+        padding: 8px;
+    }
+
+    .Conteneur-Histoire p {
+        font-size: 14px;
+    }
+
+    .Conteneur-Histoire img {
+        max-width: 250px;
+    }
+
+    #Bas-page {
+        margin: 20px;
+    }
+}

@@ -1,0 +1,254 @@
+/* Styles globaux */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(148, 27, 27);
+}
+
+.barre {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white;
+    width: 100%;
+    padding: 15px 200px; 
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1000;
+}
+
+.lien {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lien a {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(148, 27, 27);
+    transition: color 0.3s;
+}
+
+.lien a:hover {
+    color: #285dec;    
+}
+
+.Acceuil {
+    min-height: 100vh;
+    background-image: url("img/photo-1486286701208-1d58e9338013.jpg");
+    background-position: center 40%;  
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.texte-acceuil {
+    align-items: center;
+    max-width: 90%;
+    width: 100%;
+    padding: 5%; 
+    color: white;
+}
+
+.Acceuil h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+}
+
+.Acceuil p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    color: rgb(3, 3, 3);
+}
+
+.passion {
+    min-height: 100vh;
+    background-color: #75b752;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.acceuil-col1, .acceuil-col2 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.acceuil-col1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.acceuil-col2 {
+    text-align: left;
+    color: white;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.acceuil-col2 h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 20px;
+    color: black;
+}
+
+.acceuil-col2 p {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: 1.6;
+    color: black;
+    text-align: justify;
+}
+
+#Bas-page {
+    margin: 5%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries pour les écrans plus petits */
+
+/* Pour les tablettes (moins de 1024px) */
+@media (max-width: 1024px) {
+    .barre {
+        padding: 15px 50px;
+    }
+
+    .lien {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Acceuil h1 {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+    }
+
+    .Acceuil p {
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+
+    .passion {
+        padding: 0 10%;
+    }
+
+    .acceuil-col1, .acceuil-col2 {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+
+    .acceuil-col1 img {
+        width: 100%;
+    }
+
+    .acceuil-col2 h2 {
+        font-size: clamp(1.2rem, 4vw, 2rem);
+    }
+
+    .acceuil-col2 p {
+        font-size: clamp(1rem, 3.5vw, 1.2rem);
+    }
+}
+
+/* Pour les smartphones (moins de 768px) */
+@media (max-width: 768px) {
+    .barre {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .lien {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .Acceuil h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .Acceuil p {
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+
+    .passion {
+        flex-direction: column;
+        padding: 0 10%;
+    }
+
+    .acceuil-col1, .acceuil-col2 {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .acceuil-col1 img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .acceuil-col2 h2 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+
+    .acceuil-col2 p {
+        font-size: clamp(1rem, 3.5vw, 1.2rem);
+    }
+}
+
+/* Pour les très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+    .barre {
+        padding: 15px 10px;
+    }
+
+    .lien {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Acceuil h1 {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+    }
+
+    .Acceuil p {
+        font-size: clamp(1rem, 5vw, 1.2rem);
+    }
+
+    .passion {
+        padding: 0 5%;
+    }
+
+    .acceuil-col1 img {
+        width: 100%;
+    }
+
+    .acceuil-col2 h2 {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+    }
+
+    .acceuil-col2 p {
+        font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+}

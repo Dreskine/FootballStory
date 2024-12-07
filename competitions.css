@@ -1,0 +1,398 @@
+/* Styles globaux */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(148, 27, 27);
+}
+
+/* Barre de navigation */
+.barre {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white; 
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 15px 200px; 
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Conteneur des liens */
+.lien {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /
+}
+
+
+.lien a {
+    font-size: 16px;
+    color: rgb(148, 27, 27);
+    transition: color 0.3s; 
+}
+
+.lien a:hover {
+    color: #285dec; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section1 {
+    background-image: url("img/1319956-thiago-silva-avec-la-coupe-de-la-ligue-hugo-lloris-avec-la-coupe-du-monde-et-cristiano-ronaldo-avec-la-ligue-des-champions-3.jpg");
+    background-color: rgba(0, 0, 0, 0.6); /* Noir à 50% de transparence */
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 60%;    
+    height: 100vh; /* La section occupe toute la hauteur de l'écran */
+    align-items: center; 
+    display: flex;
+    color: #ffffff; 
+}
+
+
+.texte-competitions {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+/*coupe*/
+
+.section2 {
+    padding: 50px 150px;
+    text-align: center;
+    background-color: #ffffff; 
+}
+
+.Intro-coupe {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #000000;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.competitions {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: nowrap; 
+    padding: 10px;
+}
+
+.competition-cadre {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.IMAGE1{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.IMAGE {
+    max-width: 80%; 
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#IMAGE{
+    max-width: 65%;
+    border-radius: 10px;
+}
+
+.competition-cadre h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.competition-cadre p {
+    font-size: 1rem;
+    color: #666666;
+    text-align: center;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section des moments mémorables */
+.moment {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 60px; 
+    padding: 20px 20em;
+}
+
+/* Style des éléments de chaque moment */
+.moment-item {
+    display: flex;
+    align-items: center; 
+    gap: 50px; 
+}
+
+
+
+.moment-item img {
+    max-width: 300px; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.moment-item h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.moment-item p {
+    font-size: 1rem;
+    color: #666;
+    text-align: justify;
+}
+
+
+
+#Bas-page{
+    margin: 50px;
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+/* Tablettes et écrans moyens (≤ 1200px) */
+@media (max-width: 1200px) {
+    .barre {
+        padding: 15px 5%;
+    }
+
+    .lien {
+        gap: 15px;
+    }
+
+    .section1 {
+        background-position: center center;
+        height: 80vh;
+    }
+
+    .texte-competitions {
+        font-size: 2rem;
+        padding: 30px;
+    }
+
+    .section2 {
+        padding: 50px 20px;
+    }
+
+    .competitions {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .moment {
+        padding: 20px 10em;
+        grid-template-columns: 1fr;
+    }
+
+    .moment-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Petits appareils (≤ 992px) */
+@media (max-width: 992px) {
+    .barre {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    .lien {
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .section1 {
+        height: 70vh;
+    }
+
+    .texte-competitions {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    .section2 {
+        padding: 30px 10px;
+    }
+
+    .competitions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .moment {
+        padding: 20px 5em;
+        grid-template-columns: 1fr;
+    }
+
+    .moment-item {
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* Petits écrans (≤ 768px) */
+@media (max-width: 768px) {
+    .barre {
+        padding: 10px 3%;
+    }
+
+    .lien {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .section1 {
+        background-position: center center;
+        height: 60vh;
+    }
+
+    .texte-competitions {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .section2 {
+        padding: 20px 5px;
+    }
+
+    .competitions {
+        flex-direction: column;
+    }
+
+    .moment {
+        padding: 20px 2em;
+        grid-template-columns: 1fr;
+    }
+
+    .moment-item {
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+/* Très petits écrans (≤ 576px) */
+@media (max-width: 576px) {
+    .barre {
+        padding: 10px 3%;
+    }
+
+    .lien {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .section1 {
+        height: 50vh;
+    }
+
+    .texte-competitions {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .section2 {
+        padding: 15px 5px;
+    }
+
+    .competitions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .moment {
+        padding: 15px 1em;
+        grid-template-columns: 1fr;
+    }
+
+    .moment-item {
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+/* Très petits écrans (≤ 375px) */
+@media (max-width: 375px) {
+    .barre {
+        padding: 10px 2%;
+    }
+
+    .lien a {
+        font-size: 0.8rem;
+    }
+
+    .section1 {
+        height: 40vh;
+    }
+
+    .texte-competitions {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .section2 {
+        padding: 10px 5px;
+    }
+
+    .competitions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .moment {
+        padding: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .moment-item {
+        gap: 5px;
+    }
+}
