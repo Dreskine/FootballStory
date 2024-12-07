@@ -18,11 +18,11 @@ a {
 /* Barre de navigation */
 .barre {
     display: flex;
-    justify-content: space-between; /* Sépare le contenu */
-    align-items: center; /* Centre verticalement */
-    background-color: white; /* Couleur de fond */
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white; 
     width: 100%;
-    padding: 15px 200px; /* Espacement autour des éléments */
+    padding: 15px 200px; 
     box-sizing: border-box;
     top: 0;
     z-index: 1000;
@@ -50,13 +50,13 @@ a {
 
 .section1 {
     background-image: url("img/meilleursJoueurs.jpg");
-    background-color: rgba(0, 0, 0, 0.7); /* Noir à 50% de transparence */
+    background-color: rgba(0, 0, 0, 0.7); 
     background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center 25%;    
-    height: 100vh; /* La section occupe toute la hauteur de l'écran */
+    height: 100vh; 
     align-items: center; 
     display: flex;
     color: #ffffff; 
